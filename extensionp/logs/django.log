@@ -1,0 +1,163 @@
+INFO 2023-10-22 21:16:43,303 autoreload Watching for file changes with StatReloader
+INFO 2023-10-22 21:21:29,816 autoreload Watching for file changes with StatReloader
+INFO 2023-10-22 21:24:44,414 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/views.py changed, reloading.
+INFO 2023-10-22 21:24:44,794 autoreload Watching for file changes with StatReloader
+INFO 2023-10-23 07:45:38,123 autoreload Watching for file changes with StatReloader
+INFO 2023-10-23 07:47:09,870 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/views.py changed, reloading.
+INFO 2023-10-23 07:47:10,246 autoreload Watching for file changes with StatReloader
+INFO 2023-10-23 07:49:51,102 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/views.py changed, reloading.
+INFO 2023-10-23 07:49:51,472 autoreload Watching for file changes with StatReloader
+INFO 2023-10-23 07:49:58,631 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/views.py changed, reloading.
+INFO 2023-10-23 07:49:58,966 autoreload Watching for file changes with StatReloader
+INFO 2023-10-23 07:50:18,289 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/views.py changed, reloading.
+INFO 2023-10-23 07:50:18,636 autoreload Watching for file changes with StatReloader
+INFO 2023-10-23 07:51:34,094 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/model.py changed, reloading.
+INFO 2023-10-23 07:51:34,453 autoreload Watching for file changes with StatReloader
+INFO 2023-10-23 07:51:42,721 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/views.py changed, reloading.
+INFO 2023-10-23 07:51:43,059 autoreload Watching for file changes with StatReloader
+INFO 2023-10-23 07:52:01,487 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/views.py changed, reloading.
+INFO 2023-10-23 07:52:01,831 autoreload Watching for file changes with StatReloader
+INFO 2023-10-29 08:32:52,609 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/views.py changed, reloading.
+INFO 2023-10-29 08:32:53,249 autoreload Watching for file changes with StatReloader
+INFO 2023-10-29 08:32:57,441 autoreload /Users/veer/College/projects/phishing/extensionp/phishing/urls.py changed, reloading.
+INFO 2023-10-29 08:32:57,727 autoreload Watching for file changes with StatReloader
+INFO 2023-11-02 08:12:06,159 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 08:12:08,774 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 30, in get_content
+    model = joblib.load('model.pkl')
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'model.pkl'
+INFO 2023-11-02 08:14:39,770 autoreload /Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py changed, reloading.
+INFO 2023-11-02 08:14:40,154 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 08:14:46,794 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 31, in get_content
+    predictions = model.predict(email_data)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/linear_model/_base.py", line 419, in predict
+    scores = self.decision_function(X)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/linear_model/_base.py", line 400, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/base.py", line 565, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/utils/validation.py", line 894, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got scalar array instead:
+array=.
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+INFO 2023-11-02 08:56:07,831 autoreload /Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py changed, reloading.
+INFO 2023-11-02 08:56:08,409 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 08:56:33,127 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 37, in get_content
+    X_test_vec = vectorizer.transform(X_test)
+NameError: name 'vectorizer' is not defined
+INFO 2023-11-02 08:57:29,400 autoreload /Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py changed, reloading.
+INFO 2023-11-02 08:57:29,884 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 08:57:35,601 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 39, in get_content
+    X_test_vec = CountVectorizer.transform(X_test)
+TypeError: CountVectorizer.transform() missing 1 required positional argument: 'raw_documents'
+INFO 2023-11-02 08:58:31,133 autoreload /Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py changed, reloading.
+INFO 2023-11-02 08:58:31,801 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 08:58:43,133 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 40, in get_content
+    X_test_vec = vectorizer.transform(X_test)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 1430, in transform
+    self._check_vocabulary()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 510, in _check_vocabulary
+    raise NotFittedError("Vocabulary not fitted or provided")
+sklearn.exceptions.NotFittedError: Vocabulary not fitted or provided
+INFO 2023-11-02 09:01:52,991 autoreload /Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py changed, reloading.
+INFO 2023-11-02 09:01:53,565 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 09:02:15,606 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 41, in get_content
+    X_test_vec = vectorizer.transform(X_test)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 1430, in transform
+    self._check_vocabulary()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 510, in _check_vocabulary
+    raise NotFittedError("Vocabulary not fitted or provided")
+sklearn.exceptions.NotFittedError: Vocabulary not fitted or provided
+INFO 2023-11-02 09:03:54,919 autoreload /Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py changed, reloading.
+INFO 2023-11-02 09:03:55,394 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 09:04:00,487 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 41, in get_content
+    predictions = model.predict([email_data])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/linear_model/_base.py", line 419, in predict
+    scores = self.decision_function(X)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/linear_model/_base.py", line 400, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/base.py", line 565, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/utils/validation.py", line 902, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[''].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+INFO 2023-11-02 09:04:52,572 autoreload /Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py changed, reloading.
+INFO 2023-11-02 09:04:53,068 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 09:04:57,469 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 41, in get_content
+    predictions = model.predict([[email_data]])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/linear_model/_base.py", line 419, in predict
+    scores = self.decision_function(X)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/linear_model/_base.py", line 400, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/base.py", line 565, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/utils/validation.py", line 910, in check_array
+    raise ValueError(
+ValueError: dtype='numeric' is not compatible with arrays of bytes/strings.Convert your data to numeric values explicitly instead.
+INFO 2023-11-02 09:05:41,702 autoreload /Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py changed, reloading.
+INFO 2023-11-02 09:05:42,165 autoreload Watching for file changes with StatReloader
+ERROR 2023-11-02 09:05:44,931 log Internal Server Error: /phishing/get_content/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/veer/College/projects/phishing/Phishing-extension/extensionp/phishing/views.py", line 41, in get_content
+    X_test_vec = vectorizer.transform(X_test)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 1430, in transform
+    self._check_vocabulary()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sklearn/feature_extraction/text.py", line 510, in _check_vocabulary
+    raise NotFittedError("Vocabulary not fitted or provided")
+sklearn.exceptions.NotFittedError: Vocabulary not fitted or provided
